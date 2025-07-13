@@ -1,8 +1,7 @@
-### calculating simple interest
-pricipal = 1000  # Principal amount
-rate = 0.05  # Rate of interest (5%)
-time = 3  # Time in years
+principal = 1000  
+rate = 0.05  
+time = 3  
 
-interest = pricipal * rate * time  # Simple Interest formula
+interest = principal * rate * time 
 
 print(f"The simple interest is: {interest}") 
