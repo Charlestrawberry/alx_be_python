@@ -1,4 +1,4 @@
-weather_conditions = input(f"What's the weather like today? (sunny/rainy/cold): ")
+weather_conditions = input("What's the weather like today? (sunny/rainy/cold): ")
 
 if weather_conditions == "sunny":
     print(f" Wear a t-shirt and sunglasses.")
