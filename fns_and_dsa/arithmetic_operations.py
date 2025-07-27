@@ -7,7 +7,7 @@ def perform_operation(num1, num2, operation):
         return num1 * num2
     elif operation == "divide":
         # Check for division by zero
-        if num2 != 0:
+        if num2 == 0:
             return num1 / num2
         else:
             return "enter correct value"
