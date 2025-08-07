@@ -1,14 +1,17 @@
 from book_class import Book
 
 def main():
-    # create book instance
-    book = Book("1984", "George Orwell", 1949)
-    
-    # Usage of __str__ mthd
-    print(book)
-    # Usage of __repr__
-    print(repr(book))
-    # del a book instance
-    del book
+    # Creating an instance of Book
+    my_book = Book("1984", "George Orwell", 1949)
+
+    # Demonstrating the __str__ method
+    print(my_book)  # Expected to use __str__
+
+    # Demonstrating the __repr__ method
+    print(repr(my_book))  # Expected to use __repr__
+
+    # Deleting a book instance to trigger __del__
+    del my_book
+
 if __name__ == "__main__":
     main()
