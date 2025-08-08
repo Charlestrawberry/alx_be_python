@@ -10,14 +10,14 @@ class EBook(Book):
         super().__init__(title, author)
         self.file_size = file_size
     def __str__(self):
-        return f"{self.title} by {self.author} [EBook, {self.file_size}MB]"
+        return f"{self.title} by {self.author}, FIle Size: {self.file_size}KB"
 
 class PrintBook(Book):
     def __init__(self,title, author, page_count):
         super().__init__(title, author)
         self.page_count = page_count
     def __str__(self):
-        return f"{self.title} by {self.author} [Print, {self.page_count}pages]"
+        return f"{self.title} by {self.author}, Page Count: {self.page_count}]"
 
 class Library():
     def __init__(self):
@@ -38,9 +38,9 @@ class Library():
 
 if __name__ == "__main__":
     # Create some book objects
-    ebook = EBook("Python 101", "John Doe", 5)
-    printbook = PrintBook("Harry Potter", "J.K. Rowling", 350)
-    normal_book = Book("Atomic Habits", "James Clear")
+    ebook = EBook("Snow Crash", "Neal Stephenson", 500)
+    printbook = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
+    normal_book = Book("Pride and Prejudice", "Jane Austen")
 
     # Create a library
     library = Library()
