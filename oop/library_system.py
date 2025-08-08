@@ -38,9 +38,9 @@ class Library():
 
 if __name__ == "__main__":
     # Create some book objects
+    normal_book = Book("Pride and Prejudice", "Jane Austen")
     ebook = EBook("Snow Crash", "Neal Stephenson", 500)
     printbook = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
-    normal_book = Book("Pride and Prejudice", "Jane Austen")
 
     # Create a library
     library = Library()
