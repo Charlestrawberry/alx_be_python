@@ -8,9 +8,8 @@ class Calculator:
     
     @classmethod
     def multiply(cls, a, b):
-        product = a * b
         print(f"Calculation type: {cls.calculation_type}")
-        return product
+        return a * b
 
 if __name__ == "__main__":
     # using the @static mthd
